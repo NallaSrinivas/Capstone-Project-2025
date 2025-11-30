@@ -3,7 +3,7 @@ __pycache__/
 
 # Virtual environment
 venv/
-.env/
+.env
 kenv/
 
 # Optional: Project directories we don't want to track
