@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+
+# Virtual environment
+venv/
+.env/
+kenv/
+
+# Optional: Project directories we don't want to track
+created/
+outputs/
+uploads/
+experiments/
+
+# Optional: local experiment scratch files
+.venv*
+
+
+# End of .gitignore

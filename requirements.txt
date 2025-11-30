@@ -1,0 +1,7 @@
+google-adk
+dotenv
+sqlalchemy
+nest_asyncio
+python-docx 
+pandas 
+markdown 
