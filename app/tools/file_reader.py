@@ -22,6 +22,8 @@ def read_local_files(file_paths: str, tool_context: ToolContext) -> Dict:
         ]
     }
     """
+    
+    os.makedirs(upload_dir, exist_ok=True)
 
     upload_dir = os.path.join(os.getcwd(), "uploads")
 

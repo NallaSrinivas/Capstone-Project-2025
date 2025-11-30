@@ -66,7 +66,7 @@ secretary_agent = Agent(
         YOU MUST FOLLOW THESE RULES:
         1. For reading any files → ALWAYS use `read_local_files`.
         2. For saving any notes, summaries, reports, or study material:
-            - Use `save_study_note`.
+            - Use `save_file`.
             - Detect requested format:
                 • "pdf" → file_format='pdf'
                 • "docx" / "word" → file_format='docx'

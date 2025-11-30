@@ -6,7 +6,7 @@ from google.adk.sessions import DatabaseSessionService
 from google.adk.runners import Runner
 from google.genai import types
 
-from app.root_agent import root_agent   # ✅ YOUR agent file
+from app.agent import root_agent   # ✅ YOUR agent file
 
 # Load env
 load_dotenv(".env")
