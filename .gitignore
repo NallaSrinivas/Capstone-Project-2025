@@ -15,5 +15,6 @@ experiments/
 # Optional: local experiment scratch files
 .venv*
 
-
+# db file
+agents.db
 # End of .gitignore
