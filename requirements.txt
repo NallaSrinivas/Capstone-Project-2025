@@ -5,7 +5,7 @@ python-docx
 pandas 
 markdown 
 pypdf
-streamlit 
 requests 
 psutil 
 python-dotenv
+aisqlite

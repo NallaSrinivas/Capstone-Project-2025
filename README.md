@@ -69,18 +69,6 @@ KAGGLE/
 │   │   └── python_show.py           # Python code display tool
 │   └── utils/
 │       └── db.py                    # Database utilities
-├── experiments/                     # Jupyter notebooks for exploration
-│   ├── day1a.ipynb
-│   ├── day1b.ipynb
-│   ├── day2a.ipynb
-│   ├── day-2b-agent-tools-best-practices.ipynb
-│   ├── day-3a-agent-sessions.ipynb
-│   ├── day-3b-agent-memory.ipynb
-│   ├── day-4a-agent-observability.ipynb
-│   ├── day-4b-agent-evaluation.ipynb
-│   ├── day-5a-agent2agent-communication.ipynb
-│   ├── day-5b-agent-deployment.ipynb
-│   └── sample-agent/
 ├── uploads/                         # Input files for reading
 ├── outputs/                         # Generated output files
 └── temp/                            # Temporary working directory
@@ -436,9 +424,6 @@ For issues or questions:
 ## 🎓 Learning Path
 
 1. **Start**: Run `main.py` and interact with the chat
-2. **Explore**: Check `/experiments` notebooks
-3. **Extend**: Add custom tools in `/app/tools`
-4. **Deploy**: Use deployment patterns from `day-5b-agent-deployment.ipynb`
 
 ---
 
