@@ -1,8 +1,11 @@
 google-adk
-dotenv
 sqlalchemy
 nest_asyncio
 python-docx 
 pandas 
 markdown 
 pypdf
+streamlit 
+requests 
+psutil 
+python-dotenv

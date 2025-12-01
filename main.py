@@ -6,7 +6,10 @@ from google.adk.sessions import DatabaseSessionService
 from google.adk.runners import Runner
 from google.genai import types
 
-from app.agent import root_agent   # ✅ YOUR agent file
+from app.agent import root_agent   #  YOUR agent file
+from app.logger import logging
+from app.exception.exception import custom_exception
+
 
 # Load env
 load_dotenv(".env")
@@ -20,7 +23,7 @@ async def main():
     # ============================
     # 1. App Name MUST be stable
     # ============================
-    APP_NAME = "skillforge" or "agents" # <--- IMPORTANT: Define explicitly
+    APP_NAME = "skillforge" 
 
     # ============================
     # 2. User & Session
@@ -32,7 +35,7 @@ async def main():
     # 3. Database Session Service
     # ============================
     session_service = DatabaseSessionService(
-        db_url="sqlite+aiosqlite:///app/utils/agents.db"
+        db_url="sqlite+aiosqlite:///agents.db"
     )
 
     # Ensure session exists
@@ -88,15 +91,16 @@ async def main():
 
                         # A) Tool call
                         if part.function_call:
-                            print(f"   ⚙️ Tool call: {part.function_call.name}")
+                            logging.logger.info(f"Tool Call: {part.function_call.name}")
 
                         # B) Text
                         text = getattr(part, "text", None)
                         if text and text.strip():
-                            print(f"agents: {text}")
+                            logging.logger.info(f"agents: {text}")
 
         except Exception as e:
-            print(f"[ERROR] {e}")
+            raise custom_exception(str(e), "Runner failure")
+
 
 
 if __name__ == "__main__":
